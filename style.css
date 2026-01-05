@@ -1,14 +1,12 @@
-/* إعدادات عامة للجسم: تغيير الخط والخلفية */
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap');
 
 :root {
-  /* لوحة ألوان موف / بنفسجي */
   --bg: #f6f3fb;
-  --primary: #7a3dde;      /* بنفسجي رئيسي */
+  --primary: #7a3dde;     
   --text: #1f1b2e;
   --muted: #6b6285;
-  --accent: #c67aff;       /* موف فاتح مائل للوردي */
-  --mobile-bg: #efe7ff;    /* للخلفية في الشاشات الصغيرة */
+  --accent: #c67aff;      
+  --mobile-bg: #efe7ff;   
 }
 
 * { box-sizing: border-box; }
@@ -22,14 +20,13 @@ html, body {
   line-height: 1.7;
 }
 
-/* حاوية عامة مع padding (Box Model) */
+
 .container {
   width: min(100%, 1000px);
   margin-inline: auto;
   padding: 16px;
 }
 
-/* قسم البطل */
 .hero {
   background: linear-gradient(135deg, #ffffff, #f4ecff);
   border-bottom: 1px solid #e5ddff;
@@ -46,7 +43,6 @@ html, body {
   color: var(--muted);
 }
 
-/* جعل الصورة متجاوبة */
 .hero__image {
   max-width: 100%;
   height: auto;
@@ -54,7 +50,6 @@ html, body {
   border: 2px solid #e6dbff;
 }
 
-/* قسم من أنا */
 .about h2, .contact h2 {
   color: var(--primary);
   margin-top: 8px;
@@ -72,7 +67,6 @@ html, body {
   margin: 6px 0;
 }
 
-/* قسم التواصل */
 .contact {
   margin-top: 24px;
   background: #fff;
@@ -87,7 +81,6 @@ html, body {
 
 .contact__link:hover { text-decoration: underline; }
 
-/* زر التحيّة */
 .btn {
   display: inline-block;
   padding: 10px 16px;
@@ -101,7 +94,6 @@ html, body {
 
 .btn:hover { background: #6930c9; }
 
-/* Media Query لتغيير لون الخلفية عند الشاشات الصغيرة (< 600px) */
 @media (max-width: 600px) {
   body { background: var(--mobile-bg); }
   .hero h1 { font-size: 1.6rem; }
