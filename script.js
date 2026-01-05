@@ -1,4 +1,3 @@
-// عند الضغط على زر "مرحبا" تظهر رسالة ترحيبية باستخدام alert()
 document.addEventListener('DOMContentLoaded', function () {
   const helloBtn = document.getElementById('helloBtn');
   if (helloBtn) {
